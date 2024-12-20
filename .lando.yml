@@ -1,0 +1,53 @@
+name: skyfall
+recipe: drupal11
+services:
+  node:
+    type: node:20
+    globals:
+      npm: latest
+    build:
+      - cd /app/web/themes/custom/solspire && rm -rf node_modules && npm i && echo "Node modules have been reinstalled successfully!"
+    overrides:
+      ports:
+        - "5173:5173"
+        - "3000:3000"
+        - "3001:3001"
+      environment:
+        VITE_HMR_HOST: "skyfall.lndo.site"
+  appserver:
+    xdebug: true
+    config:
+      php: .lando/config/php.ini
+    overrides:
+      environment:
+        DRUSH_OPTIONS_URI: "http://skyfall.lndo.site"
+    build_as_root:
+      - echo '==========================================='
+      - echo 'The node.js container is ready. You can start storybook by typing:'
+      - echo 'To use hot reloading of CSS, go to http://localhost:3000'
+      - echo 'CORS takes care of mapping localhost URLs to drupal, see the documentation for more info'
+      - echo '==========================================='
+config:
+  composer_version: 2-latest
+  webroot: ./web
+  php: 8.3
+  xdebug: true
+  config:
+    php: .lando/config/php.ini
+
+# Add additional tooling
+tooling:
+  node:
+    service: node
+  npm:
+    service: node
+  npx:
+    service: node
+  storybook:
+    service: node
+    description: Run storybook script
+    cmd: .lando/build/storybook.sh
+  watch:
+    service: node
+    description: Run Vite / watch for the front-end build
+    cmd: .lando/build/watch.sh

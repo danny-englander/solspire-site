@@ -1,0 +1,25 @@
+uuid: 002c3836-e6e7-4fff-97e5-7ecfa06cb631
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - solspire
+_core:
+  default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
+id: solspire_site_branding
+theme: solspire
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 0334c465-1ec9-4809-8189-7d3b3105b744
+langcode: en
+status: true
+dependencies:
+  theme:
+    - solspire
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: solspire_primary_local_tasks
+theme: solspire
+region: highlighted
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

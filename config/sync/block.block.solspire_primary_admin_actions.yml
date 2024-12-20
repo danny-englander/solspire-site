@@ -1,0 +1,20 @@
+uuid: 7127cb33-494f-4307-b446-1104f2362d45
+langcode: en
+status: true
+dependencies:
+  theme:
+    - solspire
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: solspire_primary_admin_actions
+theme: solspire
+region: highlighted
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: b7b1c2cb-490d-4855-99c1-b80b8f2622a5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - solspire
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: solspire_content
+theme: solspire
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

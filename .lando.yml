@@ -27,6 +27,10 @@ services:
       - echo 'To use hot reloading of CSS, go to http://localhost:3000'
       - echo 'CORS takes care of mapping localhost URLs to drupal, see the documentation for more info'
       - echo '==========================================='
+  phpmyadmin:
+    type: phpmyadmin
+    hosts:
+      - database
 config:
   composer_version: 2-latest
   webroot: ./web

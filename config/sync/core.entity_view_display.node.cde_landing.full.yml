@@ -1,0 +1,42 @@
+uuid: be5cb2ff-b5c5-4955-8263-cfe7ab431876
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - node.type.cde_landing
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          9f973742-6f70-4c65-bb71-fc8da6db33f7:
+            uuid: 9f973742-6f70-4c65-bb71-fc8da6db33f7
+            region: content
+            configuration:
+              id: 'extra_field_block:node:cde_landing:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.cde_landing.full
+targetEntityType: node
+bundle: cde_landing
+mode: full
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

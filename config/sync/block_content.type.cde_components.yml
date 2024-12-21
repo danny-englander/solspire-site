@@ -1,0 +1,8 @@
+uuid: e32fd2b2-b06a-4d07-bc3a-7883a1824d81
+langcode: en
+status: true
+dependencies: {  }
+id: cde_components
+label: Components
+revision: false
+description: null

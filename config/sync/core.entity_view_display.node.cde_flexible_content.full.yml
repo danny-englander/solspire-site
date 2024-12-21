@@ -1,23 +1,29 @@
-uuid: 5ffcb722-2863-49b6-8e7c-13c8eba20423
+uuid: 4519eea4-d964-4a42-992b-e6b88fcec429
 langcode: en
-status: true
+status: false
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.field.node.cde_flexible_content.field_cde_body
     - field.field.node.cde_flexible_content.field_cde_component_type
     - field.field.node.cde_flexible_content.field_cde_link
     - field.field.node.cde_flexible_content.field_cde_media
     - node.type.cde_flexible_content
   module:
+    - layout_builder
     - link
     - nomarkup
     - options
     - text
     - user
-id: node.cde_flexible_content.default
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.cde_flexible_content.full
 targetEntityType: node
 bundle: cde_flexible_content
-mode: default
+mode: full
 content:
   field_cde_body:
     type: text_default
@@ -71,4 +77,5 @@ content:
     weight: 1
     region: content
 hidden:
+  layout_builder__layout: true
   links: true

@@ -1,0 +1,21 @@
+uuid: 04ae120b-009c-4b53-b422-fd669052e242
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.cde_landing.layout_builder__layout
+    - node.type.cde_landing
+  module:
+    - user
+id: node.cde_landing.default
+targetEntityType: node
+bundle: cde_landing
+mode: default
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  layout_builder__layout: true

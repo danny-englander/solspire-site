@@ -1,0 +1,11 @@
+uuid: 8c60dced-72a2-494f-b3bf-116b1450d526
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.cde_minimal
+label: Minimal
+description: ''
+targetEntityType: node
+cache: true

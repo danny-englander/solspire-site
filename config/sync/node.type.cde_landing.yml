@@ -1,0 +1,21 @@
+uuid: fddf9b6b-7d92-49aa-8e5e-93c43202a5ea
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - micronode
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  micronode:
+    micronode_is_microcontent: false
+name: 'Landing page'
+type: cde_landing
+description: null
+help: null
+new_revision: true
+preview_mode: 0
+display_submitted: false

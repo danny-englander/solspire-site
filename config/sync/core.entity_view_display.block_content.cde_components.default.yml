@@ -1,0 +1,21 @@
+uuid: 333412f6-7d2d-4b86-9c27-a34c8b461132
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cde_components
+    - field.field.block_content.cde_components.field_cde_component_ref
+id: block_content.cde_components.default
+targetEntityType: block_content
+bundle: cde_components
+mode: default
+content:
+  field_cde_component_ref:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

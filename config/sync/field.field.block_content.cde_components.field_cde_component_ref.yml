@@ -1,0 +1,29 @@
+uuid: bee47e38-8d42-4e07-899c-c8e48a3db999
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cde_components
+    - field.storage.block_content.field_cde_component_ref
+    - node.type.cde_flexible_content
+id: block_content.cde_components.field_cde_component_ref
+field_name: field_cde_component_ref
+entity_type: block_content
+bundle: cde_components
+label: 'Component reference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      cde_flexible_content: cde_flexible_content
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

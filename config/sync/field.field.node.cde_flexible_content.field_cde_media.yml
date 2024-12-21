@@ -1,0 +1,29 @@
+uuid: f478ed59-b25c-49f3-af38-24c52a3b93a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cde_media
+    - media.type.image
+    - node.type.cde_flexible_content
+id: node.cde_flexible_content.field_cde_media
+field_name: field_cde_media
+entity_type: node
+bundle: cde_flexible_content
+label: Media
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

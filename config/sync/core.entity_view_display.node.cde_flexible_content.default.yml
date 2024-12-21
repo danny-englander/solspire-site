@@ -1,0 +1,48 @@
+uuid: 5ffcb722-2863-49b6-8e7c-13c8eba20423
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.cde_flexible_content.field_cde_body
+    - field.field.node.cde_flexible_content.field_cde_link
+    - field.field.node.cde_flexible_content.field_cde_media
+    - node.type.cde_flexible_content
+  module:
+    - link
+    - text
+    - user
+id: node.cde_flexible_content.default
+targetEntityType: node
+bundle: cde_flexible_content
+mode: default
+content:
+  field_cde_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_cde_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_cde_media:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  links: true

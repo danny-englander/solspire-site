@@ -10,8 +10,8 @@ _core:
   default_config_hash: _nZjxxdypO6xrOAJkCYD81v0L7wh2zbCAVO7_C-UKIc
 id: solspire_search_form_narrow
 theme: solspire
-region: primary_menu
-weight: -4
+region: hidden
+weight: -5
 provider: null
 plugin: search_form_block
 settings:

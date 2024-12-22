@@ -41,6 +41,16 @@ config:
 
 # Add additional tooling
 tooling:
+  xdebug-on:
+    service: appserver
+    description: Enable xdebug for nginx.
+    cmd: docker-php-ext-enable xdebug && kill -USR2 $(pgrep -o php-fpm) || true && echo "Xdebug enabled"
+    user: root
+  xdebug-off:
+    service: appserver
+    description: Disable xdebug for nginx.
+    cmd: rm -f /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && kill -USR2 $(pgrep -o php-fpm) || true && echo "Xdebug disabled"
+    user: root
   node:
     service: node
   npm:

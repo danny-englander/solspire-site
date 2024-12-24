@@ -25,7 +25,6 @@
     "composer/installers": "^2.3",
     "cweagans/composer-patches": "^1.7",
     "drupal/admin_toolbar": "^3.5",
-    "drupal/auto_entitylabel": "^3.3",
     "drupal/conditional_fields": "^4.0@alpha",
     "drupal/core-composer-scaffold": "^11.1",
     "drupal/core-project-message": "^11.1",
@@ -39,6 +38,7 @@
     "drupal/media_library_edit": "^3.0",
     "drupal/micronode": "^1.2",
     "drupal/nomarkup": "^1.0",
+    "drupal/token": "^1.15",
     "drush/drush": "^13.3",
     "mglaman/composer-drupal-lenient": "^1.0"
   },

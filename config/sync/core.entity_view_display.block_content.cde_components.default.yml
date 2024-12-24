@@ -5,6 +5,10 @@ dependencies:
   config:
     - block_content.type.cde_components
     - field.field.block_content.cde_components.field_cde_component_ref
+    - field.field.block_content.cde_components.field_cde_wrapper_type
+  module:
+    - nomarkup
+    - options
 id: block_content.cde_components.default
 targetEntityType: block_content
 bundle: cde_components
@@ -18,5 +22,16 @@ content:
       link: true
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_cde_wrapper_type:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+    weight: 1
     region: content
 hidden: {  }

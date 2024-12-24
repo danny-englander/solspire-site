@@ -1,0 +1,21 @@
+uuid: 4e8ad2cc-c79e-4c09-817e-19713619a1d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cde_components
+    - field.storage.block_content.field_cde_wrapper_type
+  module:
+    - options
+id: block_content.cde_components.field_cde_wrapper_type
+field_name: field_cde_wrapper_type
+entity_type: block_content
+bundle: cde_components
+label: 'Wrapper type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

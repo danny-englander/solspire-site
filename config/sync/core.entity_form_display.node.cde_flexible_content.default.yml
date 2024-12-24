@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.cde_flexible_content.field_cde_media
     - node.type.cde_flexible_content
   module:
+    - conditional_fields
     - link
     - media_library
     - media_library_edit
@@ -46,7 +47,26 @@ content:
     settings:
       placeholder_url: ''
       placeholder_title: ''
-    third_party_settings: {  }
+    third_party_settings:
+      conditional_fields:
+        9850e4df-1430-455d-89ae-c958008096f3:
+          entity_type: node
+          bundle: cde_flexible_content
+          dependee: field_cde_component_type
+          settings:
+            state: '!visible'
+            reset: false
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: cde_text
+            effect: show
+            effect_options: {  }
+            selector: ''
   field_cde_media:
     type: media_library_widget
     weight: 3
@@ -57,6 +77,25 @@ content:
       media_library_edit:
         show_edit: '1'
         edit_form_mode: default
+      conditional_fields:
+        e976cd0a-c80c-4b2f-acbc-0905e586db3e:
+          entity_type: node
+          bundle: cde_flexible_content
+          dependee: field_cde_component_type
+          settings:
+            state: '!visible'
+            reset: false
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: cde_text
+            effect: show
+            effect_options: {  }
+            selector: ''
   path:
     type: path
     weight: 9

@@ -1,0 +1,21 @@
+uuid: 73a3c259-bf46-4754-a668-72b38ce51d1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cde_invert_media
+    - node.type.cde_flexible_content
+id: node.cde_flexible_content.field_cde_invert_media
+field_name: field_cde_invert_media
+entity_type: node
+bundle: cde_flexible_content
+label: 'Invert media'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

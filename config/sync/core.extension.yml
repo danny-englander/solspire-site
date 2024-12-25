@@ -10,7 +10,6 @@ module:
   block_content: 0
   breakpoint: 0
   ckeditor5: 0
-  conditional_fields: 0
   config: 0
   contact: 0
   contextual: 0
@@ -21,6 +20,7 @@ module:
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
+  entity_clone: 0
   field: 0
   field_group: 0
   field_ui: 0
@@ -33,6 +33,7 @@ module:
   inline_entity_form: 0
   layout_builder: 0
   layout_builder_iframe_modal: 0
+  layout_builder_operation_link: 0
   layout_discovery: 0
   link: 0
   link_attributes: 0

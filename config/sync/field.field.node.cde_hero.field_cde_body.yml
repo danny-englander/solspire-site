@@ -1,0 +1,24 @@
+uuid: 6ca86240-3f84-4120-9249-f55f7de79030
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cde_body
+    - filter.format.basic_html
+    - node.type.cde_hero
+  module:
+    - text
+id: node.cde_hero.field_cde_body
+field_name: field_cde_body
+entity_type: node
+bundle: cde_hero
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

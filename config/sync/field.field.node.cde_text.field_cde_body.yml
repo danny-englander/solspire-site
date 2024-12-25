@@ -1,0 +1,26 @@
+uuid: d51de4c2-aef1-42f9-9837-8ed192d55603
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cde_body
+    - filter.format.basic_html
+    - filter.format.full_html
+    - node.type.cde_text
+  module:
+    - text
+id: node.cde_text.field_cde_body
+field_name: field_cde_body
+entity_type: node
+bundle: cde_text
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - full_html
+field_type: text_long

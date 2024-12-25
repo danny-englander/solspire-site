@@ -1,0 +1,20 @@
+uuid: 0dd8ae51-4fcd-4b5c-99c5-5a4b25962c82
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - micronode
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+  micronode:
+    micronode_is_microcontent: true
+name: Hero
+type: cde_hero
+description: null
+help: null
+new_revision: true
+preview_mode: 0
+display_submitted: false

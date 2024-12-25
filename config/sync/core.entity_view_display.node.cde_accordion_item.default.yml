@@ -1,0 +1,33 @@
+uuid: daad9358-cf9a-4722-b6b4-07ea9dff018e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.cde_accordion_item.field_cde_body
+    - node.type.cde_accordion_item
+  module:
+    - nomarkup
+    - text
+    - user
+id: node.cde_accordion_item.default
+targetEntityType: node
+bundle: cde_accordion_item
+mode: default
+content:
+  field_cde_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

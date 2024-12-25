@@ -1,0 +1,18 @@
+uuid: fdeedd25-7d33-4066-b966-1a11b1da75cd
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_cde_invert_media
+field_name: field_cde_invert_media
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

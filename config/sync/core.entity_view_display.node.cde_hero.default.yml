@@ -1,23 +1,21 @@
-uuid: 5ffcb722-2863-49b6-8e7c-13c8eba20423
+uuid: 28ac3fce-b225-4f4a-84a0-169dea645eed
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.cde_flexible_content.field_cde_body
-    - field.field.node.cde_flexible_content.field_cde_component_type
-    - field.field.node.cde_flexible_content.field_cde_invert_media
-    - field.field.node.cde_flexible_content.field_cde_link
-    - field.field.node.cde_flexible_content.field_cde_media
-    - node.type.cde_flexible_content
+    - field.field.node.cde_hero.field_cde_body
+    - field.field.node.cde_hero.field_cde_invert_media
+    - field.field.node.cde_hero.field_cde_link
+    - field.field.node.cde_hero.field_cde_media
+    - node.type.cde_hero
   module:
     - link
     - nomarkup
-    - options
     - text
     - user
-id: node.cde_flexible_content.default
+id: node.cde_hero.default
 targetEntityType: node
-bundle: cde_flexible_content
+bundle: cde_hero
 mode: default
 content:
   field_cde_body:
@@ -30,17 +28,6 @@ content:
         separator: '|'
         referenced_entity: ''
     weight: 0
-    region: content
-  field_cde_component_type:
-    type: list_key
-    label: hidden
-    settings: {  }
-    third_party_settings:
-      nomarkup:
-        enabled: false
-        separator: '|'
-        referenced_entity: ''
-    weight: 4
     region: content
   field_cde_invert_media:
     type: boolean

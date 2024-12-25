@@ -1,0 +1,23 @@
+uuid: d39dd4ce-99aa-4e6a-9fc7-bcadb6fab5b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cde_link
+    - node.type.cde_card
+  module:
+    - link
+id: node.cde_card.field_cde_link
+field_name: field_cde_link
+entity_type: node
+bundle: cde_card
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 2
+  link_type: 17
+field_type: link

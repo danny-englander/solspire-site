@@ -1,0 +1,33 @@
+uuid: e4c6b3c0-8e9a-437e-a20b-96083cadae2f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.cde_text.field_cde_body
+    - node.type.cde_text
+  module:
+    - nomarkup
+    - text
+    - user
+id: node.cde_text.default
+targetEntityType: node
+bundle: cde_text
+mode: default
+content:
+  field_cde_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,25 +1,30 @@
-uuid: 89e859c2-f635-4696-a639-5fdd09b1697a
+uuid: f5f77bef-fb36-4df6-8a50-99f427099cfc
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_form_mode.node.cde_minimal
-    - field.field.node.cde_flexible_content.field_cde_body
-    - field.field.node.cde_flexible_content.field_cde_component_type
-    - field.field.node.cde_flexible_content.field_cde_invert_media
-    - field.field.node.cde_flexible_content.field_cde_link
-    - field.field.node.cde_flexible_content.field_cde_media
-    - node.type.cde_flexible_content
+    - field.field.node.cde_hero.field_cde_body
+    - field.field.node.cde_hero.field_cde_invert_media
+    - field.field.node.cde_hero.field_cde_link
+    - field.field.node.cde_hero.field_cde_media
+    - node.type.cde_hero
   module:
     - link
     - media_library
     - media_library_edit
+    - path
     - text
-id: node.cde_flexible_content.cde_minimal
+id: node.cde_hero.default
 targetEntityType: node
-bundle: cde_flexible_content
-mode: cde_minimal
+bundle: cde_hero
+mode: default
 content:
+  created:
+    type: datetime_timestamp
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_cde_body:
     type: text_textarea
     weight: 2
@@ -27,12 +32,6 @@ content:
     settings:
       rows: 5
       placeholder: ''
-    third_party_settings: {  }
-  field_cde_component_type:
-    type: options_select
-    weight: 1
-    region: content
-    settings: {  }
     third_party_settings: {  }
   field_cde_invert_media:
     type: boolean_checkbox
@@ -59,9 +58,29 @@ content:
       media_library_edit:
         show_edit: '1'
         edit_form_mode: default
+  path:
+    type: path
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 8
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 6
+    weight: 11
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 9
     region: content
     settings:
       display_label: true
@@ -74,9 +93,14 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden:
-  created: true
-  path: true
-  promote: true
-  sticky: true
-  uid: true
+  uid:
+    type: entity_reference_autocomplete
+    weight: 6
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

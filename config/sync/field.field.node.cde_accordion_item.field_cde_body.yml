@@ -1,0 +1,26 @@
+uuid: 2bcc8b19-34ac-429d-b3c5-6082f62edd9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cde_body
+    - filter.format.basic_html
+    - filter.format.full_html
+    - node.type.cde_accordion_item
+  module:
+    - text
+id: node.cde_accordion_item.field_cde_body
+field_name: field_cde_body
+entity_type: node
+bundle: cde_accordion_item
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - full_html
+field_type: text_long

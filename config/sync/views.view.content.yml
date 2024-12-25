@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_cde_component_type
   module:
+    - micronode
     - node
     - options
     - user
@@ -647,6 +648,48 @@ display:
           expose:
             operator_limit_selection: false
             operator_list: {  }
+        micronode_is_microcontent:
+          id: micronode_is_microcontent
+          table: node_field_data
+          field: micronode_is_microcontent
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: micronode_is_microcontent
+          operator: '='
+          value: true
+          group: 1
+          exposed: true
+          expose:
+            operator_id: ''
+            label: 'Is Micro-content'
+            description: ''
+            use_operator: false
+            operator: micronode_is_microcontent_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: micronode_is_microcontent
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
       filter_groups:
         operator: AND
         groups:
@@ -770,6 +813,7 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_cde_component_type'
+        - 'config:node_type_list'
   page_1:
     id: page_1
     display_title: Page
@@ -803,3 +847,4 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_cde_component_type'
+        - 'config:node_type_list'

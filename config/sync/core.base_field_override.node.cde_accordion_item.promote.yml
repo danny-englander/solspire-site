@@ -1,0 +1,22 @@
+uuid: 21126fb6-cefe-4130-9c0f-4ef0ba29e14f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.cde_accordion_item
+id: node.cde_accordion_item.promote
+field_name: promote
+entity_type: node
+bundle: cde_accordion_item
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

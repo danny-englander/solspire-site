@@ -32,3 +32,5 @@ cloneable_entities:
   - entity_form_display
   - entity_view_mode
   - base_field_override
+  - layout_builder_style
+  - layout_builder_style_group

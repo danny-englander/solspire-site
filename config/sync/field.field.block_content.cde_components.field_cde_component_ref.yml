@@ -5,8 +5,10 @@ dependencies:
   config:
     - block_content.type.cde_components
     - field.storage.block_content.field_cde_component_ref
-    - node.type.cde_flexible_content
+    - node.type.cde_accordion_item
+    - node.type.cde_card
     - node.type.cde_hero
+    - node.type.cde_text
 id: block_content.cde_components.field_cde_component_ref
 field_name: field_cde_component_ref
 entity_type: block_content
@@ -21,11 +23,13 @@ settings:
   handler: 'default:node'
   handler_settings:
     target_bundles:
-      cde_flexible_content: cde_flexible_content
+      cde_accordion_item: cde_accordion_item
+      cde_card: cde_card
       cde_hero: cde_hero
+      cde_text: cde_text
     sort:
       field: _none
       direction: ASC
     auto_create: false
-    auto_create_bundle: cde_flexible_content
+    auto_create_bundle: cde_hero
 field_type: entity_reference

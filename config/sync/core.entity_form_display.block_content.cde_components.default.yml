@@ -6,7 +6,6 @@ dependencies:
     - block_content.type.cde_components
     - core.entity_form_mode.node.cde_minimal
     - field.field.block_content.cde_components.field_cde_component_ref
-    - field.field.block_content.cde_components.field_cde_wrapper_type
   module:
     - inline_entity_form
 id: block_content.cde_components.default
@@ -31,12 +30,6 @@ content:
       collapsed: false
       revision: true
       removed_reference: optional
-    third_party_settings: {  }
-  field_cde_wrapper_type:
-    type: options_select
-    weight: 1
-    region: content
-    settings: {  }
     third_party_settings: {  }
   info:
     type: string_textfield

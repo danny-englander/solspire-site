@@ -1,0 +1,12 @@
+uuid: a0e0c27c-ccc6-4c39-aa1c-12195494a2d4
+langcode: en
+status: true
+dependencies: {  }
+id: cde_grid_3_up
+label: 'Grid 3 up'
+classes: "grid\r\ngrid--3up"
+type: component
+group: cde_components
+block_restrictions: {  }
+layout_restrictions: {  }
+weight: 0

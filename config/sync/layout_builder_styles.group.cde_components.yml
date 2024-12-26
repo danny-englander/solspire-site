@@ -1,0 +1,10 @@
+uuid: d754497b-d9ec-417e-a84d-8833d9fb288c
+langcode: en
+status: true
+dependencies: {  }
+id: cde_components
+label: Components
+multiselect: single
+form_type: checkboxes
+required: false
+weight: 0

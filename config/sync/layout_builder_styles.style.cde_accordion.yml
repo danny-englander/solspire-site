@@ -1,0 +1,12 @@
+uuid: 09e8e66f-9a96-4730-87cb-d88f77493111
+langcode: en
+status: true
+dependencies: {  }
+id: cde_accordion
+label: Accordion
+classes: accordion
+type: component
+group: cde_components
+block_restrictions: {  }
+layout_restrictions: {  }
+weight: 0

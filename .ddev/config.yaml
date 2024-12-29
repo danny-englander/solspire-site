@@ -17,6 +17,7 @@ corepack_enable: false
 
 # name: <projectname> # Name of the project, automatically provides
 #   http://projectname.ddev.site and https://projectname.ddev.site
+nodejs_version: "20"
 
 # type: <projecttype>  # backdrop, cakephp, craftcms, drupal, drupal6, drupal7, drupal8, drupal9, drupal10, drupal11, laravel, magento, magento2, php, shopware6, silverstripe, symfony, typo3, wordpress
 # See https://ddev.readthedocs.io/en/stable/users/quickstart/ for more
@@ -281,3 +282,16 @@ corepack_enable: false
 #   - exec: drush sql:sanitize
 #   - exec: drush updatedb
 #   - exec: drush cache:rebuild
+# Add required packages
+webimage_extra_packages: [net-tools]
+
+web_extra_exposed_ports:
+  - name: browsersync
+    container_port: 5173
+    http_port: 5173
+    https_port: 5174
+
+web_extra_daemons:
+  - name: browsersync
+    command: "/var/www/html/.ddev/commands/web/watch.sh"
+    directory: /var/www/html
